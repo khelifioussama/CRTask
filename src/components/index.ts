@@ -1,3 +1,7 @@
+/*
+Component is creating a require cycle warning , should be fixed by changing the export architecture
+*/
+
 export {default as CircledButton} from './CircledButton/CircledButton';
 export {default as FlightData} from './FlightData/FlightData';
 export {default as FlightInfo} from './FlightInfo/FlightInfo';
