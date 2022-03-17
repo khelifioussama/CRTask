@@ -4,6 +4,16 @@ import {t} from '@translations';
 import FlightInfo from '../FlightInfo/FlightInfo';
 import styles from './FlightData.styles';
 
+/*
+ when a flight is selected , the following data is shown : 
+  - Base Airport
+  - Destination Airport
+  - Airport codes
+  - Departure Time
+  - Price before discount
+  - Price before discount
+  - Price after discount
+*/
 interface FlightDataProps {
   destination: string;
   destinationIata: string;

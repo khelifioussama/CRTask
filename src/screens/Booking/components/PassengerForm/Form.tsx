@@ -12,7 +12,17 @@ import styles from './Form.styles';
 interface FormProps {
   flightId: string;
 }
+/* 
+Primary passenger form should be implemented with the following fields:
+- Name field : required : Done
+- Surname field : required : Done
+- Passport or ID number : required : Done
 
+*/
+/*
+Fields should have basic validation - all fields should be required : Done
+Passport or ID number should be validated with length of exact 9 characters : Done
+*/
 const Form = ({flightId}: FormProps) => {
   const initialValues = {
     name: '',

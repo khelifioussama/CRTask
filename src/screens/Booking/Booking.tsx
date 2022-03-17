@@ -10,6 +10,9 @@ import styles from './Booking.styles';
 import {RootStackParamsList} from '@navigation/types';
 
 const Booking = () => {
+  /*
+  My Booking screen should be opened after pressing the “Book Ticket” button in Modal with flight summary : done
+  */
   const route = useRoute<RouteProp<RootStackParamsList, 'BookingScreen'>>();
   const [state, setState] = React.useState({
     cabin: true,

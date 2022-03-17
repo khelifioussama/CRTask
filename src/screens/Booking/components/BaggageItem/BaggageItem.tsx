@@ -4,6 +4,11 @@ import styles from './BaggageItem.styles';
 import {Checkbox} from 'react-native-paper';
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 
+
+
+/* 
+User should be able to select/deselect Cabin and Checked baggage : Done
+*/
 interface BaggageItemProps {
   value: Boolean;
   setValue: () => void;
