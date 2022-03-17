@@ -17,7 +17,9 @@ interface BaggageItemProps {
   size: string;
   price: string;
 }
-
+/* 
+we don't need to use class component here , function components works good
+*/
 export default class BaggageClassComponent extends React.Component<BaggageItemProps> {
   render() {
     const {value, setValue, icon, name, size, price} = this.props;
