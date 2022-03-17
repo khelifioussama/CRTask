@@ -26,6 +26,10 @@ type Props = {
   navigation: any;
 };
 
+/*
+ storing flights in store would be better , to work offline
+*/
+
 const Connections = ({navigation}: Props) => {
   const [fromText, setFromText] = useState('');
   const [inputExpanded, setInputExpanded] = useState(false);
@@ -54,6 +58,7 @@ const Connections = ({navigation}: Props) => {
   }, []);
 
   const onChangeText = useCallback((text) => {
+    /* secure text text?.length  */
     if (text.length > 1) {
       setSearchResults(flightUtils.searchCityAutocomplete(text));
     } else {
