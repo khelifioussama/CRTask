@@ -6,6 +6,11 @@ import {t} from '@translations';
 
 const Stack = createStackNavigator();
 
+/*
+Passing an inline function will cause the component state to be lost on re-render and cause perf issues since it's re-created every render
+     Line 24 :        component={() => <Booking />} should be component={Booking}
+        
+*/
 export const MainNavigator = () => {
   return (
     <NavigationContainer>
@@ -17,7 +22,7 @@ export const MainNavigator = () => {
         />
         <Stack.Screen
           name={'BookingScreen'}
-          component={() => <Booking />}
+          component={Booking}
           options={{title: t.myBooking.title}}
         />
       </Stack.Navigator>
