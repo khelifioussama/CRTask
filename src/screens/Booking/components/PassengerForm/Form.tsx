@@ -42,6 +42,7 @@ const Form = ({flightId}: FormProps) => {
   const dispatch = useDispatch<AppDispatch>();
 
   const onSubmit = () => {
+    /* if ticket is buyed with success close modal*/
     dispatch(buy(flightId));
   };
 
