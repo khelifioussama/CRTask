@@ -10,9 +10,8 @@ import styles from './FlightData.styles';
   - Destination Airport
   - Airport codes
   - Departure Time
-  - Price before discount
-  - Price before discount
-  - Price after discount
+  - Price before discount but this is a Mock Data not the real price
+  - Price after discount but this is a Mock Data not the real price
 */
 interface FlightDataProps {
   destination: string;
