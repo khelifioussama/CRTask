@@ -7,6 +7,9 @@ import CustomMapStyle from './CustomMapStyle.json';
 import styles from './MapView.styles';
 import {FlightData} from '@types';
 import {flights} from '@data';
+/*
+Map key need to be added to app.json this app will work only in expo go , in standlone mode the Map will not work
+*/
 
 const INIT_REGION = {
   latitude: 41.8962667,
