@@ -3,7 +3,9 @@ import {ScrollView, Text, Image} from 'react-native';
 import {empty} from '@assets/images';
 import {t} from '@translations';
 import styles from './EmptyState.styles';
-
+/*
+ change empty to require(empty) or fix it in the import in impty file
+*/
 const EmptyState = () => {
   return (
     <ScrollView
