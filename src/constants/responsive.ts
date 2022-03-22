@@ -44,6 +44,7 @@ const getStatusBarHeight = () => {
   return StatusBar.currentHeight;
 };
 
+// status barheight is unused
 const statusBarHeight = getStatusBarHeight();
 
 // https://github.com/react-navigation/stack/blob/3ed1b283f14388d10213a640b153eb74c1d8536a/src/views/Header/HeaderSegment.tsx#L70

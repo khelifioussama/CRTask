@@ -12,7 +12,9 @@ export default function App() {
     /* use AppLoading  if font not ready */
     return null;
   }
-
+ /* 
+ add a View named screen that wrap the MainNavigator with statusBarHeight and footer ( responsive )
+ */
   return (
     <Provider store={store}>
       <PaperProvider theme={PaperTheme}>
