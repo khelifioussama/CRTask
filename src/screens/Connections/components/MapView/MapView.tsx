@@ -80,6 +80,7 @@ class MapView extends React.Component<MapViewProps, MapViewState> {
   };
 
   render() {
+    /* secure flights  */
     return (
       <Map
         style={styles.container}

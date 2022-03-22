@@ -1,5 +1,6 @@
 // Functions used to detect iphoneX
 // https://github.com/ptelad/react-native-iphone-x-helper
+// use react-native-iphone-x-helper
 import {Dimensions, Platform, StatusBar} from 'react-native';
 
 const dimension = Dimensions.get('window');

@@ -9,6 +9,7 @@ export default function App() {
   const {isLoaded} = useInitializeFonts();
 
   if (!isLoaded) {
+    /* use AppLoading  if font not ready */
     return null;
   }
 

@@ -41,7 +41,16 @@ const initialState: TicketState = {
   error: null,
   reservationId: null,
 };
-
+/* - Default parameters should be last , specify default in action
+   - it's not the job of the reducer to show alert it just maintain the state of redux store
+   - The state is immutable don't create a newState and no need to return the newstate just change the state 
+   EXP : 
+    case BUY_TICKET_REQUEST: {
+      state.isLoading = true;
+      state.error = null;
+      state.reservationId = null;
+    }
+*/
 export const ticketReducer = (
   state = initialState,
   action: TicketAction,

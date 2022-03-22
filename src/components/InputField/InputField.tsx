@@ -9,7 +9,7 @@ interface Props extends TextInputProps {
   value: string;
   mode: 'flat' | 'outlined' | undefined;
 }
-
+/* should define a property for onChangeText,onBlur,placeholder in the interface Props extends TextInputProps interface.*/
 const InputField = ({
   error,
   touched,
