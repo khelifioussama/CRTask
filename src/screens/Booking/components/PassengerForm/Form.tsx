@@ -9,20 +9,15 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {InputField} from '@components';
 import styles from './Form.styles';
 
+
+    /*
+    -  if ticket is buyed with success close modal
+    - use isLoading to show a loader when the form is submitting
+    */
+
 interface FormProps {
   flightId: string;
 }
-/* 
-Primary passenger form should be implemented with the following fields:
-- Name field : required : Done
-- Surname field : required : Done
-- Passport or ID number : required : Done
-
-*/
-/*
-Fields should have basic validation - all fields should be required : Done
-Passport or ID number should be validated with length of exact 9 characters : Done
-*/
 const Form = ({flightId}: FormProps) => {
   const initialValues = {
     name: '',
@@ -42,7 +37,6 @@ const Form = ({flightId}: FormProps) => {
   const dispatch = useDispatch<AppDispatch>();
 
   const onSubmit = () => {
-    /* if ticket is buyed with success close modal*/
     dispatch(buy(flightId));
   };
 

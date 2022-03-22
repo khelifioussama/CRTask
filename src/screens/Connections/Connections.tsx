@@ -27,7 +27,11 @@ type Props = {
 };
 
 /*
- storing flights in store would be better , to work offline
+ - storing flights in store would be better , to work offline
+ - create interface for useState hooks
+ - no need to use !! in ligne
+ - Pass this onPress Data to openModal of FlightCard without drilling data
+ - use modalRef?.current?.close(); 
 */
 
 const Connections = ({navigation}: Props) => {

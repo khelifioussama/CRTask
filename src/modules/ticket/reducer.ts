@@ -50,6 +50,7 @@ const initialState: TicketState = {
       state.error = null;
       state.reservationId = null;
     }
+   - isLoading is unused
 */
 export const ticketReducer = (
   state = initialState,

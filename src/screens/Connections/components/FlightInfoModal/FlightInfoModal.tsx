@@ -7,7 +7,9 @@ import styles from './FlightInfoModal.styles';
 import {FlightData} from '@components';
 
 const modalHeight = 510;
-
+/* 
+- modalHeight should be responsive for all devices type
+*/
 interface FlightInfoModalProps {
   destination: string;
   destinationIata: string;

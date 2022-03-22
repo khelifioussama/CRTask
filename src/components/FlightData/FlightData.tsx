@@ -5,13 +5,7 @@ import FlightInfo from '../FlightInfo/FlightInfo';
 import styles from './FlightData.styles';
 
 /*
- when a flight is selected , the following data is shown : 
-  - Base Airport
-  - Destination Airport
-  - Airport codes
-  - Departure Time
-  - Price before discount but this is a Mock Data not the real price
-  - Price after discount but this is a Mock Data not the real price
+  - Price is mock data need to be realData
 */
 interface FlightDataProps {
   destination: string;

@@ -28,7 +28,14 @@ interface HeaderWithInputProps {
   searchResults: AirportData[];
   handleCitySelect: ({iata, city}: {iata: string; city: string}) => void;
 }
-
+/* 
+  - set label minimized when text empty 
+  - animation not smooth
+  - onBlur !fromtext need to check  the length of the fromtext.length == 0
+  - use onChangetext when click renderInputRight cross button to clear the field ( fromtext )
+  - setLabelMinimized to false when click renderInputRight cross button
+  - keyExtractor={(item) => item.iata} keyExtractor need to be unique use flatList index or keyGenerator
+*/
 const HeaderWithInput = ({
   originAirport,
   searchingFlights,

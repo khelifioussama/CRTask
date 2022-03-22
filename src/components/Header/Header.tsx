@@ -10,7 +10,7 @@ interface HeaderProps {
   textColor?: string;
   highlightedTextColor?: string;
 }
-
+/*no need to use !! */
 const Header = ({
   headerFirstLine,
   headerSecondLine,

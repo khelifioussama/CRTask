@@ -1,5 +1,5 @@
 import {useFonts} from 'expo-font';
-/* change the emport of assets */
+
 export const useInitializeFonts = () => {
   const [loaded] = useFonts({
     'Muli-Regular': require('@assets/fonts/Muli-Regular.ttf'),

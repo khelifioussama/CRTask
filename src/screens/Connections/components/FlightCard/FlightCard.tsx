@@ -7,7 +7,11 @@ import {ModalData} from '@types';
 type FlightCardProps = ModalData & {
   onPress: (modalData: ModalData) => void;
 };
-
+/*
+ - no need to pass modalData in handlePress 
+ <CircledButton withShadow={false} onPress={onPress} />
+ and create the modalData in connections.tsx ( data drealdown )
+ */
 const FlightCard = ({
   onPress,
   id,

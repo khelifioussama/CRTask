@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {colors, textStyles} from '@constants';
-
+/* Fix safeArea for iphoneX and other devices , use a screen view that wrap all the screens instide*/
 export default StyleSheet.create({
   safeArea: {
     backgroundColor: colors.blue,
